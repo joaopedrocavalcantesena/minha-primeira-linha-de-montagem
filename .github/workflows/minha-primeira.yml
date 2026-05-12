@@ -1,4 +1,4 @@
-name: Minha primeira linha de montagem
+name:  Minha primeira linha de montagem
 on:
   push:
     branches: [main]
