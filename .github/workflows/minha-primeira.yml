@@ -1,4 +1,5 @@
-name:  Minha primeira linha de montagem
+name: Minha primeira linha de montagem
+
 on:
   push:
     branches: [main]
@@ -6,13 +7,12 @@ on:
 jobs:
   build-e-teste:
     runs-on: ubuntu-latest
-
     steps:
-    - name: 1. Pegar o chassi do carro(codigo-fonte)
-    uses: actions/chackout@v4
-    
-      - name: 2. Etação de Build (motagem)
-    run: echo "construindo o projeto...verificando se todas as peças se encaixam!"
-    
-    - name: 3. estaçao de teste (cotole de qualidade)
-      run: echo "rodando os teste automotizados...verificando se a porta abre e fecha!"
+      - name: 1. Pegar o chassi do carro (codigo-fonte)
+        uses: actions/checkout@v3
+
+      - name: 2. Estacao de Build (montagem)
+        run: echo "construindo o projeto...verificando se todas as pecas se encaixam!"
+
+      - name: 3. Estacao de teste (controle de qualidade)
+        run: echo "rodando os testes automatizados...verificando se a porta abre e fecha!"
